@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ page.title }}</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            :root {
+                --primary-color: #72afff;
+                --secondary-color: #1e80ff;
+            }
+            * {
+                font-family: 'Asap', sans-serif;
+            }
+            html {
+                border-top: 10px solid var(--primary-color);
+            }
+            body {
+                max-width: 35em;
+                margin: auto;
+            }
+            nav {
+                padding-top: 1em;
+            }
+            nav ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            nav a {
+                margin-right: 1em;
+            }
+            a {
+                color: var(--secondary-color);
+                text-decoration: none;
+            }
+            .photo-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+                gap: 1em;
+                list-style: none;
+                padding: 0;
+            }
+            .photo-grid img {
+                width: 100%;
+                height: auto;
+                border-radius: 1em;
+            }
+            footer {
+                margin-top: 2em;
+                padding-top: 1em;
+                border-top: 1px solid #ccc;
+                text-align: center;
+            }
+            .blog-posts {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+            }
+            .blog-posts li {
+                margin-bottom: 1em;
+            }
+        </style>
+    </head>
+    <body>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+        </nav>
+        <main>
+            {{ content }}
+        </main>
+        <footer>
+            <p><em>made with 💜 and coffee.</em></p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Welcome to my website!</h1>
+
+<p>This is my home on the web.</p>
+
+<h2>Blog</h2>
+
+<ul class="blog-posts">
+    {% for post in site.posts %}
+    <li>{{ post.date | long_date }} <a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Photos</h2>
+
+<ul class="photo-grid">
+    <li>
+        <img src="https://jamesg.blog/assets/golden_gate_bridge.jpeg" alt="" />
+    </li>
+    <li>
+        <img src="https://jamesg.blog/assets/golden_gate_bridge.jpeg" alt="" />
+    </li>
+    <li>
+        <img src="https://jamesg.blog/assets/golden_gate_bridge.jpeg" alt="" />
+    </li>
+    <li>
+        <img src="https://jamesg.blog/assets/golden_gate_bridge.jpeg" alt="" />
+    </li>
+</ul>

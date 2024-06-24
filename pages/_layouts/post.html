@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<h1>{{ post.title }}</h1>
+
+<p>Published on <time datetime="{{ post.date | date_to_xml_string }}">{{ post.date | long_date }}</time>.</p>
+
+<section class="content">
+    {{ content }}
+</section>
