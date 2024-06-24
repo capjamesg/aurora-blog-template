@@ -2,6 +2,16 @@
 
 A blog template for use with the [Aurora static site generator](https://github.com/capjamesg/aurora).
 
+This template comes with:
+
+- A home page
+- A blog post template
+- An about page
+- An archives page
+- Auto-generated archive pages for years, months, and days
+- Auto-generated tag pages
+- Atom feed
+
 <img width="1420" alt="blog" src="https://github.com/capjamesg/aurora-blog-template/assets/37276661/2e0d2846-6d3e-4444-8ce5-f4607594816b">
 
 ## Use this Template
