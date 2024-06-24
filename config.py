@@ -1,7 +1,7 @@
 import os
 
 BASE_URLS = {
-    "local": os.getcwd(),
+    "local": "http://localhost:8000",
     "production": "https://example.com",
 }
 

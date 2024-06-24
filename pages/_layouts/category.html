@@ -1,0 +1,18 @@
+---
+layout: default
+title: Posts in {{ page.category }} Category
+description: Links to all of the social posts on this website.
+---
+
+<h1>{{ page.category }} Posts 📝</h1>
+
+<section class="h-feed">
+    <ul>
+    {% for post in page.posts %}
+        <li class="h-entry">
+            <a href="{{ post.url }}" class="p-name u-url u-uid">{{ post.title }}</a>
+            <date>({{ post.date | long_date }})</date>
+        </li>
+    {% endfor %}
+    </ul>
+</section>

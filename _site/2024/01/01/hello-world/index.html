@@ -4,29 +4,37 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>{{ page.title }}</title>
+        <title></title>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
-        {% if page.description %}
-            <meta name="description" content="{{ page.description }}">
-        {% endif %}
+        
 
-        <link rel="alternate" type="application/atom+xml" title="{{ site.title }} Atom Feed" href="https://granary.io/url?input=html&output=atom&url={{ site.root_url }}">
+        <link rel="alternate" type="application/atom+xml" title=" Atom Feed" href="https://granary.io/url?input=html&output=atom&url=http://localhost:8000">
 
-        <link rel="stylesheet" href="{{ site.root_url }}/assets/styles.css">
+        <link rel="stylesheet" href="http://localhost:8000/assets/styles.css">
     </head>
     <body>
         <nav>
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/archives">Archives</a>
-            <a href="https://granary.io/url?input=html&output=atom&url={{ site.root_url }}">Feed</a>
+            <a href="https://granary.io/url?input=html&output=atom&url=http://localhost:8000">Feed</a>
         </nav>
         <main>
-            {{ content }}
+            <h1>Hello, World!</h1>
+
+<p>Published on <time datetime="2024-01-01T00:00:00">January 01, 2024</time>.</p>
+
+    <p>Filed under: <a href="/category/test" class="p-category">Test</a>.</p>
+
+
+<section class="content">
+    <p>This is the first post on the blog.</p>
+
+</section>
         </main>
         <footer>
             <p><em>made with 💜 and coffee.</em></p>

@@ -5,6 +5,9 @@ layout: default
 <h1>{{ post.title }}</h1>
 
 <p>Published on <time datetime="{{ post.date | date_to_xml_string }}">{{ post.date | long_date }}</time>.</p>
+{% if post.categories %}
+    <p>Filed under: <a href="/category/{{ post.categories[0].lower() }}" class="p-category">{{ post.categories[0] }}</a>.</p>
+{% endif %}
 
 <section class="content">
     {{ content }}

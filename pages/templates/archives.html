@@ -1,0 +1,27 @@
+---
+layout: default
+title: Home
+---
+
+<h1>Archives</h1>
+
+<h2>Posts by Year</h2>
+
+<ul class="blog-posts">
+    {% for year, _ in site.years.items() %}
+    <li><a href="/{{ year }}/">{{ year }}</a></li>
+    {% endfor %}
+</ul>
+
+<h2>Posts by Month</h2>
+
+<ul class="blog-posts">
+    {% for year, _ in site.years.items() %}
+    <h3>{{ year }}</h3>
+    <ul>
+        {% for month, _ in site.years[year].items() %}
+        <li><a href="/{{ year }}/{% if month < 10 %}0{% endif %}{{ month }}/">{{ month | month_number_to_written_month }}</a></li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+---
+layout: default
+title: Posts in {{ page.tag }} Tag
+description: Links to all of the social posts on this website.
+---
+
+<h1>{{ page.tag }} Posts 📝</h1>
+
+<p>Below is a list of my blog posts in the {{ page.tag }} tag.</p>
+
+<section class="h-feed">
+    <ul>
+    {% for post in page.posts %}
+        <li><a href="{{ post.url }}" class="interview">{{post.title}}</a> ({{ post.date | long_date }})</li>
+    {% endfor %}
+    </ul>
+</section>
